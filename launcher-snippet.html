@@ -1,0 +1,14 @@
+<html>
+<button class="link-btn" onclick="openBlankCloak('https://29021.github.io/')" style="text-align: center;">
+      launcher
+    </button>
+<script>
+        function openBlankCloak(url) {
+            const win = window.open('about:blank', '_blank');
+            win.document.title = "New Tab";
+            win.document.body.style.margin = "0";
+            win.document.body.innerHTML =
+                `<iframe src="${url}" style="width:100vw;height:100vh;border:none;"></iframe>`;
+        }
+    </script>
+</html>
